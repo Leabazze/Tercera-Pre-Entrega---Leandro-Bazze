@@ -1,0 +1,31 @@
+{% extends 'surApp/padre.html' %}
+
+{% block contenido %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/mis_estilos.css' %}">
+<form class="formulario" action="{% url 'CargarJugador' %}" method="post">{% csrf_token %}
+    <h3>ARMA TU EQUIPO</h3>
+    <br>
+    <select class="selector"  name="posicion">
+        
+        {% for posicion in posiciones  %}
+        
+        {% if posicion.0 in posiciones_cargadas %}
+        <option class="cargado" value="{{ posicion.0 }}">{{posicion.1}}</option>
+        {% else %}
+        <option class="No_cargado" value="{{ posicion.0 }}">{{posicion.1}}</option>
+        {% endif %}
+        {% endfor %}
+    </select>
+    <input class="ingreso" type="text" name="nombre" placeholder="Nombre">
+    <br>
+    <input class="ingreso" type="text" name="apellido" placeholder="Apellido">
+    <br>
+    <input class="boton" type="submit" value="Cargar">
+</form>
+
+<footer>
+    <p>test4</p>
+    <p>{{posiciones}}</p>
+</footer>
+{% endblock contenido %}

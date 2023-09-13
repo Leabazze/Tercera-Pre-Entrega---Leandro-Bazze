@@ -1,0 +1,22 @@
+{% extends 'surApp/padre.html' %}
+
+{% block contenido %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/mis_estilos.css' %}">
+<form class="formulario" action="{% url 'CargarDt' %}" method="post">{% csrf_token %}
+    <h3>CARGA EL DT DE TU EQUIPO</h3>
+    <br>
+    <input class="ingreso" type="text" name="nombre" placeholder="Nombre">
+    <br>
+    <input class="ingreso" type="text" name="apellido" placeholder="Apellido">
+    <br>
+    <input class="ingreso" type="number" name="edad" placeholder="Edad">
+    <br>
+    <input class="boton" type="submit" value="Cargar">
+</form>
+
+<footer>
+    <p>test4</p>
+    <p>{{posiciones}}</p>
+</footer>
+{% endblock contenido %}

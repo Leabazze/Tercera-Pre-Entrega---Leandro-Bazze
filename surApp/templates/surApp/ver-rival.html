@@ -1,0 +1,13 @@
+{% extends 'surApp/padre.html' %}
+
+{% block contenido %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/mis_estilos.css' %}">
+<div class="formulario">
+    <h1>rivales</h1>
+    {% for rival in rivales  %}
+    <li>{{rival}}</li>    
+    {% endfor %}
+</div>
+    
+{% endblock contenido %}

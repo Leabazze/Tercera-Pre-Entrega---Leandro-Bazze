@@ -1,0 +1,11 @@
+{% extends 'surApp/padre.html' %}
+
+{% block contenido %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/mis_estilos.css' %}">
+<div class="eleccion_rival"> 
+    <h2>resultado: {{resultado}}</h2>
+    <h2>TU EQUIPO:{{resultado_mio}} </h2>
+    <h2>{{rival.nombre}}: {{resultado_rival}}</h2>
+</div>
+{% endblock contenido %}

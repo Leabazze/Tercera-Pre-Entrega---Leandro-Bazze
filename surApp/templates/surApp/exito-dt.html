@@ -1,0 +1,13 @@
+{% extends 'surApp/padre.html' %}
+
+{% block contenido %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/mis_estilos.css' %}">
+<div class="formulario">
+    <h1 class="texto_dt">TECNICO CARGADO</h1>
+    <h1 class="texto_dt">Nombre: {{tecnico.nombre}}</h1>
+    <h1 class="texto_dt">Apellido: {{tecnico.apellido}}</h1>
+    <h1 class="texto_dt">Edad: {{tecnico.edad}}</h1>
+</div>
+    
+{% endblock contenido %}

@@ -1,0 +1,22 @@
+{% extends 'surApp/padre.html' %}
+
+{% block contenido %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/mis_estilos.css' %}">
+<form class="formulario" action="{% url 'Rival' %}" method="post">{% csrf_token %}
+    <h3>CARGA TUS RIVALES</h3>
+    <br>
+    <input class="ingreso" type="text" name="nombre" placeholder="Nombre">
+    <br>
+    <h3>Puntaje</h3>
+    <br>
+        <select class="selector"  name="puntaje">
+            <option name="puntaje" value="1">1-malo</option>
+            <option name="puntaje" value="2">2-regular</option>
+            <option name="puntaje" value="3">3-bueno</option>
+            <option name="puntaje" value="4">4-muy bueno</option>
+            <option name="puntaje" value="5">5-excelente</option>
+        </select>
+        <input class="boton" type="submit" value="Cargar">
+    </form>
+{% endblock contenido %}

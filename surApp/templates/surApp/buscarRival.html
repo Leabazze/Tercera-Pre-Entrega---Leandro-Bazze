@@ -1,0 +1,13 @@
+{% extends 'surApp/padre.html' %}
+
+{% block contenido %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/mis_estilos.css' %}">
+<form class="formulario" action="{% url 'VerRival' %}" method="get">{% csrf_token %}
+    <h3>BUSCA TUS RIVALES</h3>
+    <br>
+    <input class="ingreso" type="text" name="nombre" placeholder="Nombre">
+    <br>
+    <input class="boton" type="submit" value="Buscar">
+</form>
+{% endblock contenido %}

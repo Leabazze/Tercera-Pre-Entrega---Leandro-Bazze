@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancha</title>
+    <link rel="stylesheet" href="{% static 'css/estilos_cancha.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+
+        <div class="contenedor_cancha">
+            <a href="{% url 'Inicio' %}" class="btn btn-1">Inicio 
+                <span></span>
+                <span></span>
+            </a>
+            <a href="{% url 'BuscarRival' %}" class="btn btn-2">Buscar Rival
+                <span></span>
+                <span></span>
+            </a>
+            <a href="{% url 'Rival' %}" class="btn btn-3">Cargar Rival
+                <span></span>
+                <span></span>
+            </a>
+            <a href="{% url 'Simular' %}" class="btn btn-4">Simular Partido
+                <span></span>
+                <span></span>
+            </a>
+            
+        </div>
+    </header>
+    <div>
+        <p class="texto">NOMBRE DT {{tecnico}}</p>
+    </div>
+    <img src="{% static 'imagenes/ima_cancha.png' %}" alt="cancha futbol">
+    <div class="cancha">
+        {% for jugador in lista %}
+        <div class="jugador {{ jugador.get_posicion_display }}">
+        {{ jugador.nombre }} {{ jugador.apellido }}
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

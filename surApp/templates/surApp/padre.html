@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static  %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futbol</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+
+        <div class="contenedor">
+            <a href="{% url 'Inicio' %}" class="btn btn-1">Inicio 
+                <span></span>
+                <span></span>
+            </a>
+            <a href="{% url 'CargarJugador' %}" class="btn btn-2">Cargar jugador
+                <span></span>
+                <span></span>
+            </a>
+            <a href="{% url 'Cancha' %}" class="btn btn-3">Cancha
+                <span></span>
+                <span></span>
+            </a>
+            <a href="{% url 'CargarDt' %}" class="btn btn-4">Cargar DT
+                <span></span>
+                <span></span>
+            </a>
+            
+        </div>
+    </header>
+    
+    <main>
+        <div class="contenedor2">
+            <h1>Primer Proyecto de Django</h1>
+        </div>
+    </main>
+    
+    {% block contenido %}
+    
+    {% endblock contenido %}
+    
+    
+    
+</body>
+</html>

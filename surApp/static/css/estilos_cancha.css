@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+.contenedor_cancha{
+    display: flex;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: green;
+    flex-wrap: wrap;
+    border-color: blue;
+    box-shadow: 7px 13px 37px blue;
+    align-items: center;
+
+}
+.btn{
+    transform: scale(80%);
+}
+
+img{
+    margin-top: 3%;
+    width: 90%;
+    margin-left: 5%;
+}
+.texto {
+    clear: both;
+    position: relative;
+    top: 20%;
+    left: 0;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 15px;
+    width: 20%;
+    margin-left: 40%;
+    border: 5px solid;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.jugador{
+    display: flex;
+    flex-wrap: wrap;
+    clear: both;
+    rotate: -60deg;
+    padding: 5px;
+    text-transform: uppercase;
+    rotate: -deg;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+.jugador:hover{
+    box-shadow: 7px 13px 37px silver;
+}
+.Arquero{
+
+    position: absolute;
+    top: 80%;
+    margin-left: 10%;
+    background-color: white;
+    color: black;
+    border: 2px;
+    border-color: black;
+}
+.Central{
+    position: absolute;
+    top: 80%;
+    margin-left: 20%;
+    background-color: green;
+    color: silver;
+    border: 2px;
+    border-color: black;
+}
+
+.Defensor{
+    position: absolute;
+    top: 80%;
+    margin-left: 25%;
+    background-color: green;
+    color: silver;
+    border: 2px;
+    border-color: black;
+}
+
+.Lateral_izq{
+    position: absolute;
+    top: 45%;
+    margin-left: 28%;
+    background-color: green;
+    color: silver;
+    border: 2px;
+    border-color: 2px;
+    padding: 5px;
+}
+
+.Lateral_der{
+    position: absolute;
+    top: 110%;
+    margin-left: 28%;
+    background-color: green;
+    color: silver;
+    border: 2px;
+    border-color: 2px;
+    padding: 5px;
+}
+
+.Mediocentro{
+    position: absolute;
+    top: 70%;
+    margin-left: 38%;
+    background-color: aqua;
+    color: black;
+    border: 2px;
+    border-color: 2px;
+    padding: 5px;
+}
+
+.Mediocampista{
+    position: absolute;
+    top: 90%;
+    margin-left: 43%;
+    background-color: aqua;
+    color: black;
+    border: 2px;
+    border-color: 2px;
+    padding: 5px;
+}
+
+.Enganche{
+    position: absolute;
+    top: 80%;
+    margin-left: 55%;
+    background-color: rgb(228, 28, 151);
+    color: black;
+    border: 2px;
+    border-color: 2px;
+    padding: 5px;
+}
+
+.wing_izquierdo{
+    position: absolute;
+    top: 45%;
+    margin-left: 55%;
+    background-color: yellow;
+    color: black;
+    border: 2px;
+    border-color: 2px;
+    padding: 5px;
+}
+
+.wing_derecho{
+    position: absolute;
+    top: 110%;
+    margin-left: 55%;
+    background-color: yellow;
+    color: black;
+    border: 2px;
+    border-color: 2px;
+    padding: 5px;
+}
+
+
+.Delantero{
+    position: absolute;
+    top: 80%;
+    margin-left: 70%;
+    background-color: yellow;
+    color: black;
+    border: 2px;
+    border-color: 2px;
+    padding: 5px;
+}
